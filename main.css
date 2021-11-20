@@ -10,10 +10,20 @@ body
     overflow: hidden;
 }
 
-.canvas
+#spectrum
 {
-    position: fixed;
-    top: 0;
-    left: 0;
+  
     outline: none;
+}
+
+#pattern
+{
+    
+    outline: none;
+}
+
+.visualizer-wrapper{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
 }
