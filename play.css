@@ -1,0 +1,46 @@
+.playButton{
+    width: 363px;
+height: 128px;
+left: 245px;
+top: 194px;
+
+background: #BE08B7;
+backdrop-filter: blur(4px);
+
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 25px;
+border: none;
+font-size: xx-large;
+box-shadow:  12px 13px 0px 0px #5109AC;
+font-weight: bold;
+}
+
+.playButton:hover{
+    transform: translate(12px, 13px);
+    cursor: pointer;
+    box-shadow:  0px 0px 2px 1px #5109AC;
+    outline: none;
+
+}
+
+.playIcon{
+    position: absolute;
+    left: 150px;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    width: -moz-available;
+}
+
+html,
+body
+{
+    overflow: hidden;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
