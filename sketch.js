@@ -6,9 +6,10 @@ let dataArrayTimeDomain = null;
 let analyzer = null;
 const AudioContext = window.AudioContext || window.webkitAudioContext;
 const context = new AudioContext();
+const musicFileName = "songs/" + "BADOBADO.ogg"
 
-buffer = await getFile(context, "./Piskefloe.flac");
-await bpm("./Piskefloe.flac");
+buffer = await getFile(context, musicFileName);
+await bpm(musicFileName);
 await setupAnalyzer();
 playSample(context, buffer, 0);
 
@@ -56,7 +57,7 @@ function streamAudioFromPc() {
   navigator.mediaDevices.getUserMedia({ audio: true }).then((stream) => {
     const sampleSource = context.createMediaStreamSource(stream);
 
-    sampleSource.buffer = context.createBuffer(2, 128000, 128000);
+    sampleSource.buffer = context.createBuffer(2, 48000, 48000);
     //sampleSource.connect(context.destination);
     sampleSource.connect(analyzer);
     return sampleSource;
