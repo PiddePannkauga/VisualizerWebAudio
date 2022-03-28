@@ -5,6 +5,6 @@ Just start a webserver and open play.html.
 
 Enjoy!
 
-Music By: KungenAvOst
+Music By: KungenAvOst and Pitor
 
 Art By: Pidde
